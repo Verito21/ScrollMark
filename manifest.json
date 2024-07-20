@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "ScrollMark",
+    "version": "1.0",
+    "description": "Pin points on a web page's scrollbar for easy navigation.",
+    "permissions": ["activeTab","storage", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png"
+    }
+}

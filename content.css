@@ -1,0 +1,9 @@
+.scrollbar-pin {
+    position: fixed;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    cursor: pointer;
+    z-index: 1000;
+}
